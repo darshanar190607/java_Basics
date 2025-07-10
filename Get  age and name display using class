@@ -1,0 +1,38 @@
+package series.java;
+import java.util.*;
+
+class Person
+{
+	 String name;
+	 int age;
+	public void getName()
+	{
+		Scanner get=new Scanner(System.in);
+		System.out.print("Enter name: ");
+		name=get.nextLine();
+	
+	}
+	public void getAge()
+	{
+		Scanner a=new Scanner(System.in);
+		 System.out.print("Enter Age: ");
+		age=a.nextInt();
+	
+	}
+	public void display()
+	{
+		System.out.printf("Name is %s and age is %d",name,age);
+	}
+}
+public class Get {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person obj= new Person();
+		obj.getName();
+		obj.getAge();
+		obj.display();
+
+	}
+
+}
